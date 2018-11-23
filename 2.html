@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var text = prompt("Nhap email");
+    function email(text) {
+        regexp = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+.[A-Za-z0-9]+$/;
+        if (regexp.test(text)) {
+            alert("đúng định dạng");
+        } else {
+            alert("không đúng định dạng");
+        }
+    }
+    var result = email(text);
+    console.log(result);
+</script>
+</body>
+</html>
